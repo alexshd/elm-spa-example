@@ -4,7 +4,7 @@ import Api
 import Article.Slug exposing (Slug)
 import Browser exposing (Document)
 import Browser.Navigation as Nav
-import Html exposing (..)
+import Html.Styled as Html exposing (..)
 import Json.Decode exposing (Value)
 import Page
 import Page.Article as Article
@@ -69,7 +69,7 @@ view model =
                     Page.view viewer page config
             in
             { title = title
-            , body = List.map (Html.map toMsg) body
+            , body = List.map Html.toUnstyled (List.map (Html.map toMsg) (List.map Html.fromUnstyled body))
             }
     in
     case model of

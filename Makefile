@@ -3,7 +3,7 @@ build:
 	elm-app build
 
 deploy: build
-	surge -p build --domain offbeat-talk.surge.sh
+	surge -p build --domain elm-spa.shdlabs.com
 
 clean:
 	/bin/rm -rf build/

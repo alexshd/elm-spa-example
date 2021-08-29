@@ -1,6 +1,7 @@
 module Article.Body exposing (Body, MarkdownString, decoder, toHtml, toMarkdownString)
 
-import Html exposing (Attribute, Html)
+import Html as Ht
+import Html.Styled as Html exposing (..)
 import Json.Decode as Decode exposing (Decoder)
 import Markdown
 
@@ -23,9 +24,9 @@ type alias MarkdownString =
 -- CONVERSIONS
 
 
-toHtml : Body -> List (Attribute msg) -> Html msg
+toHtml : Body -> List (Ht.Attribute msg) -> Html msg
 toHtml (Body markdown) attributes =
-    Markdown.toHtml attributes markdown
+    fromUnstyled (Markdown.toHtml attributes markdown)
 
 
 toMarkdownString : Body -> MarkdownString

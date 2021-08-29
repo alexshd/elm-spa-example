@@ -8,8 +8,8 @@ import Api.Endpoint as Endpoint
 import Article.Feed as Feed
 import Author exposing (Author(..), FollowedAuthor, UnfollowedAuthor)
 import Avatar
-import Html exposing (..)
-import Html.Attributes exposing (..)
+import Html.Styled as Html exposing (..)
+import Html.Styled.Attributes exposing (..)
 import Http
 import Loading
 import Log

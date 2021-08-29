@@ -16,9 +16,9 @@ import Api.Endpoint as Endpoint
 import Article.Body as Body exposing (Body)
 import Article.Slug as Slug exposing (Slug)
 import Author exposing (Author)
-import Html exposing (Attribute, Html, i)
-import Html.Attributes exposing (class)
-import Html.Events exposing (stopPropagationOn)
+import Html.Styled as Html exposing (Attribute, Html, i)
+import Html.Styled.Attributes exposing (class)
+import Html.Styled.Events exposing (stopPropagationOn)
 import Http
 import Iso8601
 import Json.Decode as Decode exposing (Decoder)

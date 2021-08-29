@@ -1,7 +1,7 @@
 module Timestamp exposing (format, view)
 
-import Html exposing (Html, span, text)
-import Html.Attributes exposing (class)
+import Html.Styled as Html exposing (Html, span, text)
+import Html.Styled.Attributes exposing (class)
 import Time exposing (Month(..))
 
 

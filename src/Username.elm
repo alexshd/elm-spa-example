@@ -1,6 +1,6 @@
 module Username exposing (Username, decoder, encode, toHtml, toString, urlParser)
 
-import Html exposing (Html)
+import Html.Styled as Html exposing (Html)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Encode as Encode exposing (Value)
 import Url.Parser

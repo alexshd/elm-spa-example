@@ -1,8 +1,8 @@
 module Avatar exposing (Avatar, decoder, encode, src, toMaybeString)
 
 import Asset
-import Html exposing (Attribute)
-import Html.Attributes
+import Html.Styled exposing (Attribute)
+import Html.Styled.Attributes as Attr
 import Json.Decode as Decode exposing (Decoder)
 import Json.Encode as Encode exposing (Value)
 
@@ -48,7 +48,7 @@ src (Avatar maybeUrl) =
             Asset.src Asset.defaultAvatar
 
         Just url ->
-            Html.Attributes.src url
+            Attr.src url
 
 
 toMaybeString : Avatar -> Maybe String

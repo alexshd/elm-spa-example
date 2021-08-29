@@ -7,8 +7,8 @@ all of them. One source of truth!
 
 -}
 
-import Html exposing (Attribute)
-import Html.Attributes as Attr
+import Html.Styled as Html exposing (Attribute)
+import Html.Styled.Attributes as Attr
 
 
 type Image

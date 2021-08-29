@@ -5,9 +5,9 @@ import Api.Endpoint as Endpoint
 import Article exposing (Article, Full)
 import Article.Body exposing (Body)
 import Article.Slug as Slug exposing (Slug)
-import Html exposing (..)
-import Html.Attributes exposing (attribute, class, disabled, placeholder, value)
-import Html.Events exposing (onInput, onSubmit)
+import Html.Styled as Html exposing (..)
+import Html.Styled.Attributes exposing (attribute, class, disabled, placeholder, value)
+import Html.Styled.Events exposing (onInput, onSubmit)
 import Http
 import Json.Decode as Decode
 import Json.Encode as Encode

@@ -8,9 +8,9 @@ import Api.Endpoint as Endpoint
 import Article.Feed as Feed
 import Article.Tag as Tag exposing (Tag)
 import Browser.Dom as Dom
-import Html exposing (..)
-import Html.Attributes exposing (class, href)
-import Html.Events exposing (onClick)
+import Html.Styled as Html exposing (..)
+import Html.Styled.Attributes exposing (class, href)
+import Html.Styled.Events exposing (onClick)
 import Http
 import Loading
 import Log

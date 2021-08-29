@@ -5,9 +5,9 @@ import Article exposing (Article, Preview)
 import Article.Slug exposing (Slug)
 import Author
 import Avatar
-import Html exposing (..)
-import Html.Attributes exposing (class, classList, href)
-import Html.Events exposing (onClick)
+import Html.Styled as Html exposing (..)
+import Html.Styled.Attributes exposing (class, classList, href)
+import Html.Styled.Events exposing (onClick)
 import Http
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline exposing (required)

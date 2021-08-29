@@ -12,9 +12,9 @@ import Article.Slug exposing (Slug)
 import Author exposing (Author(..), FollowedAuthor, UnfollowedAuthor)
 import Avatar
 import CommentId exposing (CommentId)
-import Html exposing (..)
-import Html.Attributes exposing (attribute, class, disabled, href, id, placeholder, value)
-import Html.Events exposing (onClick, onInput, onSubmit)
+import Html.Styled as Html exposing (..)
+import Html.Styled.Attributes exposing (attribute, class, disabled, href, id, placeholder, value)
+import Html.Styled.Events exposing (onClick, onInput, onSubmit)
 import Http
 import Json.Decode as Decode
 import Loading

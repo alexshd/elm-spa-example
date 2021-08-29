@@ -1,4 +1,19 @@
-module Api.Endpoint exposing (Endpoint, article, articles, comment, comments, favorite, feed, follow, login, profiles, request, tags, user, users)
+module Api.Endpoint exposing
+    ( Endpoint
+    , article
+    , articles
+    , comment
+    , comments
+    , favorite
+    , feed
+    , follow
+    , login
+    , profiles
+    , request
+    , tags
+    , user
+    , users
+    )
 
 import Article.Slug as Slug exposing (Slug)
 import CommentId exposing (CommentId)

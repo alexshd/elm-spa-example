@@ -4,9 +4,9 @@ module Page.Login exposing (Model, Msg, init, subscriptions, toSession, update, 
 -}
 
 import Api
-import Html exposing (..)
-import Html.Attributes exposing (..)
-import Html.Events exposing (..)
+import Html.Styled as Html exposing (..)
+import Html.Styled.Attributes exposing (..)
+import Html.Styled.Events exposing (..)
 import Http
 import Json.Decode exposing (field)
 import Json.Encode as Encode

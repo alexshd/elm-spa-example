@@ -4,8 +4,8 @@ module Loading exposing (error, icon, slowThreshold)
 -}
 
 import Asset
-import Html exposing (Html)
-import Html.Attributes exposing (alt, height, width)
+import Html.Styled as Html exposing (Html)
+import Html.Styled.Attributes exposing (alt, height, width)
 import Process
 import Task exposing (Task)
 

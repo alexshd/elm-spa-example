@@ -2,9 +2,9 @@ module Page exposing (Page(..), view, viewErrors)
 
 import Avatar
 import Browser exposing (Document)
-import Html exposing (Html, a, button, div, footer, i, img, li, nav, p, span, text, ul)
-import Html.Attributes exposing (class, classList, href, style)
-import Html.Events exposing (onClick)
+import Html.Styled exposing (..)
+import Html.Styled.Attributes exposing (class, classList, href, style)
+import Html.Styled.Events exposing (onClick)
 import Route exposing (Route)
 import Username exposing (Username)
 import Viewer exposing (Viewer)
@@ -38,8 +38,8 @@ in the header. (This comes up during slow page transitions.)
 -}
 view : Maybe Viewer -> Page -> { title : String, content : Html msg } -> Document msg
 view maybeViewer page { title, content } =
-    { title = title ++ " - Conduit"
-    , body = [ viewHeader page maybeViewer, content, viewFooter ]
+    { title = title ++ " | Conduit"
+    , body = List.map toUnstyled [ viewHeader page maybeViewer, content, viewFooter ]
     }
 
 
@@ -137,7 +137,7 @@ isActive page route =
 viewErrors : msg -> List String -> Html msg
 viewErrors dismissErrors errors =
     if List.isEmpty errors then
-        Html.text ""
+        text ""
 
     else
         div
